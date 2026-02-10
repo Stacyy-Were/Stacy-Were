@@ -1,48 +1,40 @@
-# 🏎️ Project: Velocity Portfolio
+# 🏎️ STACY WERE // SYSTEM_DASHBOARD v1.0
 
-[![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Supabase%20%7C%20Python-orange?style=for-the-badge)](https://github.com/yourusername/portfolio)
-[![Status](https://img.shields.io/badge/Status-In%20Development-green?style=for-the-badge)]()
+### [ STATUS: PODIUM_READY ] [ UPTIME: 99.9% ] [ CLASS: S-TIER ]
 
-A high-performance personal portfolio inspired by the **Lando Norris** aesthetic. Built for speed, fueled by data, and designed with a "Bento Box" grid layout.
+A high-performance, telemetry-driven portfolio dashboard built for an **I.T Specialist & System Administrator**. This interface leverages a racing-inspired "Bento" aesthetic to visualize infrastructure health, technical specs, and professional architecture.
 
-## 🏁 The Vision
-The goal of this project is to blend Formula 1 aesthetics with modern web development. It’s not just a portfolio; it’s a telemetry dashboard for my career.
 
-* **Frontend:** Ultra-fast React/Next.js interface with Tailwind CSS.
-* **Backend:** Real-time data management via Supabase.
-* **Automation:** Python scripts to sync GitHub activity and project stats.
 
 ---
 
-## 🛠️ Tech Telemetry
+## 🛠️ THE CHASSIS (Tech Stack)
 
-| Component | Technology | Role |
-| :--- | :--- | :--- |
-| **Engine** | JavaScript (React) | Driving the UI and smooth animations. |
-| **Fuel** | Supabase | Handling the database and image storage. |
-| **Pit Crew** | Python | Automation scripts for data syncing. |
-| **Aero** | Tailwind CSS | Sleek, high-contrast "Papaya/Neon" styling. |
-
----
-
-## 🚀 Key Features
-
-* **Bento Grid Layout:** A modular design inspired by premium driver landing pages.
-* **Live Telemetry:** A "Stats" section powered by a Python script that pulls real-time GitHub data into Supabase.
-* **Dynamic Projects:** Add new projects to your database via a custom CLI tool (Python) and watch them appear instantly on the site.
-* **Glassmorphism Effects:** Sleek card designs with neon borders and high-speed hover states.
+| Component | Specification |
+| :--- | :--- |
+| **Framework** | React 19 + Vite |
+| **Aero (CSS)** | Tailwind CSS v4.0 |
+| **Power Unit** | Node.js / Python 3.12 |
+| **Telemetry** | Lucide React (System Icons) |
+| **Infrastructure** | Linux Kernel 6.x / V-Sphere |
 
 ---
 
-## 🔧 Installation & Setup
+## 📡 SYSTEM FEATURES
 
-### 1. The Backend (Supabase)
-1. Create a project at [supabase.com](https://supabase.com).
-2. Run the SQL schema found in `/database/schema.sql` to set up your `projects` table.
+* **Real-time Aesthetic:** Integrated scanline animations and technical grid backgrounds.
+* **Infrastructure Health:** Visualized system load and security verification modules.
+* **Live Telemetry:** Monospace log feeds simulating real-time node monitoring.
+* **Responsive Architecture:** Optimized for all viewports from mobile terminals to ultrawide monitors.
 
-### 2. The Pit Crew (Python)
-```bash
-cd scripts
-pip install -r requirements.txt
-# Run the sync script
-python sync_stats.py
+---
+
+## 🔧 ENGINE START (Installation)
+
+To deploy this dashboard locally, ensure you have **Node.js** installed and follow these commands:
+
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/yourusername/Stacy-Were.git](https://github.com/yourusername/Stacy-Were.git)
+
+   
