@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lime: #ccff00;
+  --color-lime-dark: #a3cc00;
+  --color-carbon: #0a0a0a;
+  --color-carbon-light: #121212;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+/*Dashboard*/
+:root {
+  background-color: var(--color-carbon);
+  color: white;
+  font-family: var(--font-sans);
+  
+  background-image: 
+    linear-gradient(to right, rgba(204, 255, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(204, 255, 0, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  min-height: 100vh;
+}
+
+
+.font-speed {
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+.tracking-tightest {
+  letter-spacing: -0.07em;
+}
+
+@keyframes scan {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(100%); }
+}
+
+.scanline {
+  width: 100%;
+  height: 100px;
+  z-index: 50;
+  background: linear-gradient(
+    to bottom, 
+    transparent, 
+    rgba(204, 255, 0, 0.08), 
+    transparent
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  animation: scan 10s linear infinite;
+}
+
+* {
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/*Custom Scrollbar*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-carbon);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-lime);
+  border-radius: 10px;
+}
