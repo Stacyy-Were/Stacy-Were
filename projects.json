@@ -1,10 +1,18 @@
 [
   {
     "id": 1,
-    "title": "Velocity OS",
-    "description": "A high-performance dashboard for racing telemetry.",
-    "tech_stack": ["React", "Python", "Tailwind"],
-    "performance_score": 98,
-    "github_link": "https://github.com/Stacy-Were"
+    "title": "Velocity Engine",
+    "description": "A high-frequency trading bot optimized for low latency.",
+    "tech_stack": ["Python", "C++", "Docker"],
+    "performance_score": 99,
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "title": "Carbon Dashboard",
+    "description": "Real-time telemetry UI for tracking system resources.",
+    "tech_stack": ["React", "Tailwind", "Vite"],
+    "performance_score": 94,
+    "link": "#"
   }
 ]
