@@ -180,7 +180,6 @@ export default function Portfolio() {
   ]);
 
   const targetDatabase = {
-    // GitHub log analyzer repo
     '192.168.1.50': {
       user: 'Admin',
       status: 'ALERT: Threshold (5) Reached - Brute Force Pattern Flagged',
@@ -265,27 +264,27 @@ export default function Portfolio() {
   };
 
   const projects = [
-    { icon: Search, title: 'Log Analyzer', desc: 'The first real tool I built — it reads through system logs and flags brute-force login patterns so I don\'t have to eyeball every line myself.' },
-    { icon: Shield, title: 'File Integrity Monitor (FIM)', desc: 'Keeps an eye on important files and tells me the moment something changes that shouldn\'t have.' },
+    { icon: Search, title: 'Log Analyzer', desc: "The first real tool I built — it reads through system logs and flags brute-force login patterns so I don't have to eyeball every line myself." },
+    { icon: Shield, title: 'File Integrity Monitor (FIM)', desc: "Keeps an eye on important files and tells me the moment something changes that shouldn't have." },
     { icon: Server, title: 'Active Directory Telemetry Lab', desc: 'My own little domain to break and rebuild, so I can actually recognize what credential dumping and lateral movement look like in real logs.' },
     { icon: Bug, title: 'Exploit Triage & Telemetry Lab', desc: 'I run exploits against deliberately vulnerable machines like Metasploitable 2, then dig through what they leave behind to write better detection rules.' },
   ];
 
-const learningItems = [
-  { name: 'SIEM', top: 6, left: 10, href: 'https://www.huntress.com/cybersecurity-education/what-is-siem' },
-  { name: 'Wazuh', top: 14, left: 82, href: 'https://wazuh.com/' },
-  { name: 'Splunk', top: 30, left: 6, href: 'https://www.splunk.com/' },
-  { name: 'PowerShell', top: 24, left: 76, href: 'https://learn.microsoft.com/en-us/powershell/' },
-  { name: 'Sigma', top: 68, left: 10, href: 'https://github.com/SigmaHQ/sigma' },
-  { name: 'MITRE ATT&CK', top: 70, left: 78, href: 'https://attack.mitre.org/' },
-  { name: 'Incident Response', top: 88, left: 22 }, 
-  { name: 'Threat Intelligence', top: 88, left: 66, href: 'https://www.ibm.com/think/topics/threat-intelligence' },
-  { name: 'Wireshark', top: 4, left: 44, href: 'https://www.wireshark.org/' },
-  { name: 'Hackviser', top: 18, left: 36, href: 'https://hackviser.com/' },
-  { name: 'TryHackMe', top: 86, left: 42, href: 'https://tryhackme.com/' },
-  { name: 'HackTheBox', top: 20, left: 58, href: 'https://www.hackthebox.com/' },
-  { name: 'Subverted.io', top: 48, left: 9, href: 'https://subverted.io/' },
-];
+  const learningItems = [
+    { name: 'SIEM', top: 6, left: 10, href: 'https://www.huntress.com/cybersecurity-education/what-is-siem' },
+    { name: 'Wazuh', top: 14, left: 82, href: 'https://wazuh.com/' },
+    { name: 'Splunk', top: 30, left: 6, href: 'https://www.splunk.com/' },
+    { name: 'PowerShell', top: 24, left: 76, href: 'https://learn.microsoft.com/en-us/powershell/' },
+    { name: 'Sigma', top: 68, left: 10, href: 'https://github.com/SigmaHQ/sigma' },
+    { name: 'MITRE ATT&CK', top: 70, left: 78, href: 'https://attack.mitre.org/' },
+    { name: 'Incident Response', top: 88, left: 22 },
+    { name: 'Threat Intelligence', top: 88, left: 66, href: 'https://www.ibm.com/think/topics/threat-intelligence' },
+    { name: 'Wireshark', top: 4, left: 44, href: 'https://www.wireshark.org/' },
+    { name: 'Hackviser', top: 18, left: 36, href: 'https://hackviser.com/' },
+    { name: 'TryHackMe', top: 86, left: 42, href: 'https://tryhackme.com/' },
+    { name: 'HackTheBox', top: 20, left: 58, href: 'https://www.hackthebox.com/' },
+    { name: 'Subverted.io', top: 48, left: 9, href: 'https://subverted.io/' },
+  ];
 
   const isFirstSection = currentSection === 0;
   const isLastSection = currentSection === SECTION_IDS.length - 1;
@@ -303,13 +302,6 @@ const learningItems = [
         .floating-fast { animation: float 2.2s ease-in-out infinite; }
       `}</style>
 
-      <div
-        className="pointer-events-none fixed inset-0 opacity-[0.05]"
-        style={{
-          backgroundImage: `linear-gradient(${PINK} 1px, transparent 1px), linear-gradient(90deg, ${PINK} 1px, transparent 1px)`,
-          backgroundSize: '48px 48px',
-        }}
-      />
       <div
         className="pointer-events-none fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] max-w-[600px] max-h-[600px] rounded-full blur-[160px] opacity-[0.12]"
         style={{ backgroundColor: PINK }}
@@ -368,10 +360,6 @@ const learningItems = [
             IT graduate turning curiosity into a career in cybersecurity one log file, one lab and one late night at a time.
           </p>
         </main>
-
-        
-
-
       </div>
 
       {/* SOC & BLUE TEAM */}
@@ -820,7 +808,6 @@ const learningItems = [
             <Mail size={17} />
             Teams
           </a>
-
         </div>
 
         <footer
