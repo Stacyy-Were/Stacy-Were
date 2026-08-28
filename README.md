@@ -1,48 +1,170 @@
-# 🏎️ Stacy's Pit Wall
+# Stacy Were — Cybersecurity Portfolio
 
-Hey! I'm **Stacy**, an I.T Specialist and System Admin. This is my digital garage—a high-performance bento-grid portfolio inspired by the **LN4 / McLaren** aesthetic. 
+> **Detect. Investigate. Secure. Learn.**
 
-I built this to track my projects with the same precision Lando tracks his apexes.
+Hey, I'm **Stacy**, an I.T Specialist and System Administrator building my way into cybersecurity.
 
----
-
-## 🛠️ What's Under the Hood?
-
-I don't just "fix computers," I build and maintain the infrastructure that keeps things moving.
-
-* **The Chassis:** Built with **React 19** and **Vite** for 0-60 speed.
-* **The Livery:** **Tailwind v4** in "Lando Lime" and Carbon.
-* **The Engine:** A mix of **Python** automation and **Linux** wizardry.
-* **The Aero:** Custom CSS scanlines and grid patterns for that retro-future terminal look.
+This portfolio is where I document the things I'm learning, the systems I'm breaking, fixing, securing and the projects I build along the way.
 
 ---
 
-## 📊 Live Telemetry
+## `whoami`
 
-This dashboard isn't just for show. It highlights my focus on:
-- 🖥️ **Server Management:** Keeping the nodes happy.
-- 🛡️ **Security:** Verifying every packet like a tech-scrutineer.
-- ⚡ **Performance:** Optimizing system load so everything runs at 100% efficiency.
+```bash
+stacy@cyberlab:~$ whoami
 
----
+Stacy Were
+IT Specialist | System Admin | CyberAnalyst | Network Engineer XD
+```
 
-## 🚦 Getting Started
+I'm interested in the space where **IT infrastructure meets security** — understanding how systems work, finding where they can fail, and learning how to protect them.
 
-To run this dashboard on your own local track:
+Currently focusing on:
 
-1. **Clone the repo:** `git clone https://github.com/yourusername/Stacy-Were.git`
-2. **Fuel up:** `npm install`
-3. **Green Flag:** `npm run dev`
-
----
-
-## 📨 Open a Ticket
-
-Got a system crash or just want to talk shop? 
-
-- **Email:** [stacyywere@gmail.com](mailto:stacyywere@gmail.com)
-- **Status:** Always hunting for the fastest lap (and the cleanest code).
+* Security Operations & SOC fundamentals
+* Networking & network security
+* Linux administration
+* Reconnaissance & vulnerability discovery
+* Log analysis & threat detection
+* Python automation
+* System & infrastructure security
 
 ---
 
-> "Infrastructure is like racing: if everything feels under control, you're just not going fast enough."
+## `security_stack`
+
+| Area              | Tools / Technologies                    |
+| ----------------- | --------------------------------------- |
+| Operating Systems | Linux, Windows                          |
+| Networking        | TCP/IP, DNS, HTTP, SSH, Nmap            |
+| Security          | THM,HTB,HV, reconnaissance,log analysis |
+| Programming       | Python, JavaScript, SQL                 |
+| Databases         | MySQL, Supabase                         |
+| Dev Tools         | Git, GitHub, VS Code                    |
+| Infrastructure    | System administration, troubleshooting  |
+
+---
+
+## `lab_activity`
+
+I'm building practical experience through **hands-on labs, projects, experiments, and controlled security testing**.
+
+### Reconnaissance
+
+Learning how attackers map systems before attempting to exploit them.
+
+```text
+[ TARGET ]
+    |
+    +--- Network Discovery
+    +--- Port Enumeration
+    +--- Service Identification
+    +--- Attack Surface Mapping
+```
+
+### Detection
+
+Learning to recognize what suspicious activity actually looks like.
+
+```text
+AUTH_EVENT
+     |
+     v
+LOG COLLECTION
+     |
+     v
+ANALYSIS
+     |
+     v
+SUSPICIOUS?
+   /     \
+ YES      NO
+  |        |
+ALERT    NORMAL
+```
+
+### Automation
+
+Using Python to eliminate repetitive tasks and turn raw data into something useful.
+
+```bash
+$ python security_monitor.py
+
+[+] Loading logs...
+[+] Parsing authentication events...
+[+] Checking failed login attempts...
+[+] Analyzing source IPs...
+
+[!] Suspicious activity detected
+```
+
+---
+
+## `projects`
+
+### Security Monitoring
+
+Security experiments focused on identifying suspicious authentication activity, analyzing logs, and understanding network behavior.
+
+**Stack:** Python / Linux / Networking
+
+---
+
+### Cybersecurity Labs
+
+Hands-on security learning through platforms such as **TryHackMe**, **Hackviser** and **HackTheBox**, covering:
+
+* Linux fundamentals
+* Windows & Active Directory
+* Networking
+* Command-line security
+* Reconnaissance
+* Enumeration
+* Defensive security concepts
+
+---
+
+## `current_mission`
+
+```text
++-----------------------------------------+
+|          SECURITY OPERATIONS             |
++-----------------------------------------+
+|                                         |
+|  [################░░░░]  CYBERSECURITY |
+|                                         |
+|  [##############░░░░░░]  NETWORKING    |
+|                                         |
+|  [############░░░░░░░░]  LINUX         |
+|                                         |
+|  [###########░░░░░░░░░]  PYTHON        |
+|                                         |
++-----------------------------------------+
+```
+
+The goal is simple:
+
+**Move from IT infrastructure into cybersecurity and become a strong security analyst.**
+
+No shortcuts. Just labs, projects, documentation and a lot of terminal windows XD
+
+---
+
+### `status`
+
+```text
++-----------------------------------------+
+|              SYSTEM STATUS              |
++-----------------------------------------+
+|                                         |
+|  SECURITY FOCUS    :: SOC OPERATIONS    |
+|  NETWORKING        :: ACTIVE            |
+|  LINUX             :: ACTIVE            |
+|  PYTHON            :: DEVELOPING        |
+|  THREAT ANALYSIS   :: DEVELOPING        |
+|  INCIDENT RESPONSE :: DEVELOPING        |
+|                                         |
++-----------------------------------------+
+```
+
+> **Every system has a story. Learn how to read the logs.**
