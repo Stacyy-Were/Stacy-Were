@@ -302,11 +302,6 @@ export default function Portfolio() {
         .floating-fast { animation: float 2.2s ease-in-out infinite; }
       `}</style>
 
-      <div
-        className="pointer-events-none fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] max-w-[600px] max-h-[600px] rounded-full blur-[160px] opacity-[0.12]"
-        style={{ backgroundColor: PINK }}
-      />
-
       {/* HERO */}
       <div id="hero" className="min-h-screen w-full flex flex-col justify-between p-5 sm:p-10 lg:p-14 relative z-10 box-border max-w-7xl mx-auto">
         <header className="w-full flex items-center justify-between">
