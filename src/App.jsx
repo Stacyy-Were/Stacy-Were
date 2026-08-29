@@ -324,12 +324,7 @@ export default function Portfolio() {
             </button>
           </nav>
 
-          <a
-            href="mailto:stacyywere@gmail.com"
-            className="px-4 sm:px-6 py-2 sm:py-2.5 rounded-full border border-zinc-800 bg-zinc-950/90 hover:border-zinc-700 text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-white transition-all shadow-md whitespace-nowrap"
-          >
-            Email
-          </a>
+          <a href="mailto:stacyywere@gmail.com" className="px-4 sm:px-6 py-2 sm:py-2.5 rounded-full border border-zinc-800 bg-zinc-950/90 hover:border-zinc-700 text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-white transition-all shadow-md whitespace-nowrap">EMAIL</a>
         </header>
 
         <main className="flex flex-col items-center justify-center text-center my-auto py-10">
@@ -338,13 +333,7 @@ export default function Portfolio() {
             {!greeting.done && <Cursor color={PINK} />}
           </div>
 
-          <h1
-            className="font-black uppercase leading-none text-white w-full text-center"
-            style={{ whiteSpace: 'nowrap', fontSize: 'clamp(2.1rem, 10.5vw, 9rem)', letterSpacing: '-0.02em' }}
-          >
-            Stacy Were<span style={{ color: PINK }}>.</span>
-          </h1>
-
+          <h1 className="font-black uppercase leading-none text-white w-full text-center" style={{ whiteSpace: 'nowrap', fontSize: 'clamp(2.1rem, 10.5vw, 9rem)', letterSpacing: '-0.02em' }}> Stacy Were <span style={{ color: PINK }}>.</span></h1>
           <div className="font-mono text-sm sm:text-base mt-7 mb-4 flex items-center gap-2 font-semibold" style={{ color: BONE, minHeight: '1.5rem' }}>
             <span style={{ color: FAINT }}>&gt;&nbsp;</span>
             {role}
@@ -352,7 +341,7 @@ export default function Portfolio() {
           </div>
 
           <p className="text-sm sm:text-base font-mono max-w-xl sm:max-w-2xl mt-6 sm:mt-8 mb-4 tracking-wide leading-relaxed px-2" style={{ color: MUTED }}>
-            IT graduate turning curiosity into a career in cybersecurity one log file, one lab and one late night at a time.
+            IT graduate and cybersecurity enthusiast specializing in log analysis, threat hunting, monitoring and building security automation tools. <br/> Turning curiosity into a career in cybersecurity.
           </p>
         </main>
       </div>
@@ -681,7 +670,7 @@ export default function Portfolio() {
 
       {/* PROJECTS */}
       <section id="projects" className="w-full py-16 sm:py-20 px-5 sm:px-10 lg:px-14 flex flex-col items-center border-t border-zinc-900 box-border max-w-6xl mx-auto text-center">
-        <Eyebrow>Security Projects</Eyebrow>
+        <Eyebrow>GitHub Repositories</Eyebrow>
         <div className="flex items-center justify-between mb-8 flex-wrap gap-4 w-full">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase">
             SOC <span style={{ color: PINK }}>projects</span>
@@ -759,7 +748,6 @@ export default function Portfolio() {
 
           <div className="relative z-20 flex flex-col items-center justify-center p-6">
             <h2 className="text-lg sm:text-xl md:text-2xl font-black uppercase mb-4 flex items-center gap-2.5">
-              <BookOpen size={22} style={{ color: PINK }} />
               Building the <span style={{ color: PINK }}>next layer</span>
             </h2>
             <a
@@ -785,8 +773,8 @@ export default function Portfolio() {
           The Goal
         </p>
         <p className="text-lg sm:text-xl md:text-2xl font-bold leading-relaxed mb-8 max-w-3xl" style={{ color: BONE }}>
-          I'm working toward a junior SOC analyst role where I can keep learning by doing — then grow from
-          there into offensive security, eventually helping teams find the holes before someone else does.
+          I'm working toward a junior SOC analyst role where I can keep learning by doing, then grow from
+          there into offensive security, eventually helping teams find the holes before somebody else does XD.
         </p>
         <p className="text-xs sm:text-sm font-mono uppercase tracking-widest mb-10 font-semibold" style={{ color: MUTED }}>
           Monitor &rarr; Analyze &rarr; Investigate &rarr; Detect &rarr; Protect
@@ -796,7 +784,7 @@ export default function Portfolio() {
           <div>
             <h3 className="text-lg sm:text-xl font-black uppercase mb-1.5">Let's talk</h3>
             <p className="text-sm sm:text-base font-mono" style={{ color: MUTED }}>
-              Open to junior SOC roles and internships, or just talking shop about logs, labs and everything I'm learning.
+              Open to junior SOC roles and internships, or just talking shop about logs, labs and everything Cybersecurity.
             </p>
           </div>
           <a href="https://teams.live.com/v2/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm font-mono font-bold uppercase tracking-widest flex-shrink-0 shadow-xl whitespace-nowrap" style={{ backgroundColor: PINK, color: INK }}>
