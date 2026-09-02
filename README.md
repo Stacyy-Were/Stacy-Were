@@ -1,5 +1,5 @@
 # Stacy Were — Cybersecurity Portfolio
-Portfolio on [Devtunnels](https://3cvl2l3f-5173.uks1.devtunnels.ms/)
+Portfolio on [POrtfolio](https://stacy-were-portfolio.netlify.app/)
 
 > **Detect. Investigate. Secure. Learn.**
 
