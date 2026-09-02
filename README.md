@@ -1,5 +1,5 @@
 # Stacy Were — Cybersecurity Portfolio
-Portfolio on [POrtfolio](https://stacy-were-portfolio.netlify.app/)
+Portfolio on [Portfolio](https://stacy-were-portfolio.netlify.app/)
 
 > **Detect. Investigate. Secure. Learn.**
 
