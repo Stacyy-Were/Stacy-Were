@@ -243,6 +243,18 @@ export default function Portfolio() {
       telemetry: ['Apache Access Logs', 'Authentication Failure Records', 'Service Enumeration Traces'],
       description: 'An intentionally vulnerable system generating real log streams and attack artifacts for defensive analysis.',
     },
+    metasploitable3: {
+      name: 'Metasploitable 3',
+      type: 'Target Node',
+      telemetry: ['Windows & Linux Service Logs', 'Vulnerable Web App Request Traces', 'Multi-Stage Exploit Chain Artifacts'],
+      description: 'A newer, more complex vulnerable target I use to practice chaining exploits and reading the messier telemetry that leaves behind.',
+    },
+    parrot: {
+      name: 'Parrot OS (Attack Emulation)',
+      type: 'Attack Node',
+      telemetry: ['Anonsurf & Traffic Obfuscation Logs', 'Recon & Enumeration Toolkit Output', 'Forensics & Reverse Engineering Traces'],
+      description: 'A second attack box alongside Kali, mainly for its forensics tooling and to see how detection coverage holds up against different attacker setups.',
+    },
     windows10: {
       name: 'Windows 10',
       type: 'Endpoint Node',
@@ -581,12 +593,30 @@ export default function Portfolio() {
                 </button>
 
                 <button
+                  onClick={() => setActiveLabNode('parrot')}
+                  className={`w-full text-left p-2 rounded-xl transition-all border ${
+                    activeLabNode === 'parrot' ? 'bg-zinc-900 border-pink-500 text-white shadow-sm' : 'bg-transparent border-transparent text-zinc-300 hover:bg-zinc-900/50'
+                  }`}
+                >
+                  <span className="font-semibold">Parrot OS (Attack Emulation)</span>
+                </button>
+
+                <button
                   onClick={() => setActiveLabNode('metasploitable')}
                   className={`w-full text-left p-2 rounded-xl transition-all border ${
                     activeLabNode === 'metasploitable' ? 'bg-zinc-900 border-pink-500 text-white shadow-sm' : 'bg-transparent border-transparent text-zinc-300 hover:bg-zinc-900/50'
                   }`}
                 >
                   <span className="font-semibold">Metasploitable 2 (Target Source)</span>
+                </button>
+
+                <button
+                  onClick={() => setActiveLabNode('metasploitable3')}
+                  className={`w-full text-left p-2 rounded-xl transition-all border ${
+                    activeLabNode === 'metasploitable3' ? 'bg-zinc-900 border-pink-500 text-white shadow-sm' : 'bg-transparent border-transparent text-zinc-300 hover:bg-zinc-900/50'
+                  }`}
+                >
+                  <span className="font-semibold">Metasploitable 3 (Target Source)</span>
                 </button>
 
                 <button
@@ -710,7 +740,8 @@ export default function Portfolio() {
       <section id="learning" className="w-full py-16 sm:py-20 px-5 sm:px-10 lg:px-14 flex flex-col items-center border-t border-zinc-900 box-border max-w-6xl mx-auto text-center relative">
         <Eyebrow>Currently Learning &amp; Platforms</Eyebrow>
 
-        <div className="relative w-full max-w-5xl mx-auto h-[300px] sm:h-[360px] md:h-[400px] flex items-center justify-center overflow-hidden rounded-3xl border border-zinc-900 bg-zinc-950/50 shadow-xl mt-4">
+        {/* Desktop / tablet: floating scattered badges */}
+        <div className="hidden sm:flex relative w-full max-w-5xl mx-auto h-[360px] md:h-[420px] items-center justify-center overflow-hidden rounded-3xl border border-zinc-900 bg-zinc-950/50 shadow-xl mt-4">
           {learningItems.map((item) => {
             const badge = (
               <span
@@ -762,6 +793,47 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
+
+        {/* Mobile: wrapped tag layout — no absolute positioning, nothing to clip or overlap */}
+        <div className="flex sm:hidden flex-col items-center w-full max-w-md mx-auto rounded-3xl border border-zinc-900 bg-zinc-950/50 shadow-xl mt-4 px-5 py-8">
+          <h2 className="text-lg font-black uppercase mb-4 flex items-center gap-2 text-center">
+            Building the <span style={{ color: PINK }}>next layer</span>
+          </h2>
+          <a
+            href="https://github.com/Stacyy-Were"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-mono font-bold uppercase tracking-widest shadow-xl mb-6"
+            style={{ backgroundColor: PINK, color: INK }}
+          >
+            <Github size={16} />
+            <span>GitHub</span>
+          </a>
+
+          <div className="flex flex-wrap gap-2 justify-center">
+            {learningItems.map((item) => {
+              const badge = (
+                <span
+                  className="px-3 py-1.5 rounded-full text-[11px] font-mono font-semibold whitespace-nowrap inline-block"
+                  style={{
+                    backgroundColor: 'rgba(255,83,161,0.15)',
+                    border: '1px solid rgba(255,83,161,0.4)',
+                    color: BONE,
+                  }}
+                >
+                  {item.name}
+                </span>
+              );
+              return item.href ? (
+                <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer">
+                  {badge}
+                </a>
+              ) : (
+                <React.Fragment key={item.name}>{badge}</React.Fragment>
+              );
+            })}
+          </div>
+        </div>
       </section>
 
       {/* GOAL & CONTACT */}
@@ -796,8 +868,7 @@ export default function Portfolio() {
 
         <footer
           className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs font-mono uppercase tracking-widest pt-6 max-w-4xl font-semibold"
-          style={{ color: FAINT, borderTop: `1px solid ${HAIRLINE}` }}
-        >
+          style={{ color: FAINT, borderTop: `1px solid ${HAIRLINE}` }}>
           <span>Stacy Were // SOC</span>
           <span className="flex items-center gap-2">
             <Wifi size={14} />
