@@ -774,7 +774,8 @@ export default function Portfolio() {
         </p>
         <p className="text-lg sm:text-xl md:text-2xl font-bold leading-relaxed mb-8 max-w-3xl" style={{ color: BONE }}>
           I'm working toward a junior SOC analyst role where I can keep learning by doing, then grow from
-          there into offensive security, eventually helping teams find the holes before somebody else does XD.
+          there into offensive security, eventually helping teams find the holes before somebody else does
+          XD.
         </p>
         <p className="text-xs sm:text-sm font-mono uppercase tracking-widest mb-10 font-semibold" style={{ color: MUTED }}>
           Monitor &rarr; Analyze &rarr; Investigate &rarr; Detect &rarr; Protect
