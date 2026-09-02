@@ -1,0 +1,11 @@
+{
+  "name": "Stacy Were Docs",
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "introduction"
+      ]
+    }
+  ]
+}
